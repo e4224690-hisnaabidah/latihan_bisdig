@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar JavaScript</title>
+    <link href="stylel.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+<div id="page-container"> 
+    <div id="main-nav">
+        <a href="index.html">Beranda</a> -
+        <a href="about.html">about me</a> -
+        <a href="skill.html">skill</a> -
+        <a href="social.html">my social links</a> -
+        <a href="eksperience.html">eksperience</a>
+        </div>
+    <div id="header">Header</div>
+    <div id="side_bar"></div>
+    <div id="content"></div>
+    <div id="footer">
+        <div id="altnav">
+            <a href="index.html">index</a> -
+            <a href="about.html">about me</a> -
+            <a href="fav.html">my favorite</a> -
+           <a href="social.html">my social links</a> -
+            <a href="eksperience.html">eksperience</a>
+        </div>
+        Copyright &copy; nama/nim Powered by CSS
+    </div>
+</div>
+
+<script>
+        // Fungsi untuk menampilkan hasil di #content
+        function showOutput(text) {
+            document.getElementById("content").innerHTML += text + "<br>";
+        }
+
+        var myVariable = "This is a variable!";
+        console.log(myVariable);
+        showOutput(myVariable);
+
+        var number1 = 5;
+        number1 = 3;
+        console.log(number1);
+        showOutput(number1);
+
+        number1 = number1 + 5; 
+        console.log(number1);
+        showOutput(number1);
+        number1 = number1 - 6; 
+        console.log(number1);
+        showOutput(number1);
+
+        var number2 = number1 * 10; 
+        console.log(number2);
+        showOutput(number2);
+
+        var number3 = number2 / number1; 
+        console.log(number3);
+        showOutput(number3);
+
+        var myString = "I am a " + "string!!";
+        console.log(myString);
+        showOutput(myString);
+
+        // Type Variabel
+        var myInteger = 12; 
+        var myLong = 9130141419482; 
+        var myFloat = 5.5; 
+        var myDouble = 9130141419482.22; 
+        var myBoolean = true; 
+        var myBoolean2 = false;
+        var myNotANumber = NaN;
+        var NaN_Example = 0 / 0; 
+        var notDefined; 
+        var myNull = null;
+
+        console.log(myInteger, myLong, myFloat, myDouble, myBoolean, myBoolean2, myNotANumber, NaN_Example, notDefined, myNull);
+        showOutput(myInteger + ", " + myLong + ", " + myFloat + ", " + myDouble + ", " + myBoolean + ", " + myBoolean2 + ", " + myNotANumber + ", " + NaN_Example + ", " + notDefined + ", " + myNull);
+
+        // Arrays dan Objects
+        var myArray = []; 
+        var favoriteFruits = ["apple", "orange", "strawberry"];
+        var carsInParkingLot = ["Toyota", "Ferrari", "Lexus"];
+        var employees = ["Billy", "Bob", "Joe"];
+        var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31];
+        var randomVariables = [2, "any type works", undefined, null, true, 2.51];
+        myArray = ["zero", "one", "two"];
+
+        console.log(myArray[0]); 
+        showOutput(myArray[0]);
+
+        console.log(employees[0]); 
+        showOutput(employees[0]);
+        var elementNumber = 1;
+        console.log(employees[elementNumber]); 
+        showOutput(employees[elementNumber]);
+
+        var myObject = {};
+
+        var john = { firstname: "John", lastname: "Doe", fullname: "John Doe" };
+        var billy = { firstname: "Billy", lastname: undefined, fullname: "Billy" };
+
+        console.log(john.fullname); 
+        showOutput(john.fullname);
+
+        console.log(billy.firstname); 
+        showOutput(billy.firstname);
+    </script>
+
+
+    <!-- Panggil file alert.js -->
+    <script src="popup.js"></script>
+    <script>
+        // Panggil popup otomatis
+        jalankanNative();
+        jalankanCustom();
+    </Script>
+    
+</body>
+</html>
